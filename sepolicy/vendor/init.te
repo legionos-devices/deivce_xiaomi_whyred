@@ -2,3 +2,4 @@
 allow init sysfs_type:file { setattr };
 allow init hal_perf_default:binder { call };
 allow init vendor_file:file { execute };
+
