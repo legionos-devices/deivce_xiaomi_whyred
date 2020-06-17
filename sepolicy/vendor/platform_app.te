@@ -7,6 +7,9 @@ allow platform_app sysfs_fps:file { getattr open read };
 allow platform_app vendor_default_prop:file { read };
 allow platform_app sysfs_kgsl:dir { search };
 allow platform_app vendor_default_prop:file { getattr  open read };
+allow platform_app adb_data_file:file { getattr  open  read };
+allow platform_app boottime_prop:file { getattr  open  read };
+allow platform_app sysfs_kgsl:lnk_file { read };
 
 # Face Unlock
 get_prop(platform_app, camera_prop)
